@@ -28,4 +28,3 @@ Part C
 	# Compile the code for part C by running make inside the folder.
 	# Run "./benchmark.o &" to run the multithreaded benchmark in the background. The code creates threads looping on while(1); equal to the number of available processors and makes a system call #549 to throttle each one.
 	# Run "./IPC-shmem.o &" to run the matrix multiplication code along with the benchmark.
-
