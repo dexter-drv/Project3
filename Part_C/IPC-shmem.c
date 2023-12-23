@@ -41,21 +41,21 @@ void transpose(int *M)
             swap(&M[i * MAX_SIZE + j], &M[j * MAX_SIZE + i]);
 }
 
-// int check(int *Q, int *M, int *N)
-// {
-//     for (int i = 0; i < MAX_SIZE; i++)
-//     {
-//         for (int j = 0; j < MAX_SIZE; j++)
-//         {
-//             register int sum = 0;
-//             for (int k = 0; k < MAX_SIZE; k++)
-//                 sum += M[i * MAX_SIZE + k] * N[j * MAX_SIZE + k];
-//             if (Q[i * MAX_SIZE + j] != sum)
-//                 return 0;
-//         }
-//     }
-//     return 1;
-// }
+int check(int *Q, int *M, int *N)
+{
+    for (int i = 0; i < MAX_SIZE; i++)
+    {
+        for (int j = 0; j < MAX_SIZE; j++)
+        {
+            register int sum = 0;
+            for (int k = 0; k < MAX_SIZE; k++)
+                sum += M[i * MAX_SIZE + k] * N[j * MAX_SIZE + k];
+            if (Q[i * MAX_SIZE + j] != sum)
+                return 0;
+        }
+    }
+    return 1;
+}
 
 int main()
 {
