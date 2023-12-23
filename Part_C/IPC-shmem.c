@@ -7,7 +7,7 @@
 #include <fcntl.h>
 
 #define MAX_SIZE 5000
-#define CHILD_PROCESSES 14
+#define CHILD_PROCESSES 13
 #define POOL_SIZE (MAX_SIZE * MAX_SIZE * 2) * sizeof(int)
 
 void *pool;
