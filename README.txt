@@ -4,12 +4,15 @@ Setup
 
 wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.tar.xz
 tar xf linux-4.17.tar.xz
-cd linux-4.17
-sudo make x86_64_defconfig
 
 # Apply Patch
 
 patch -s -p0 < file.patch
+
+# Configure
+
+cd linux-4.17
+sudo make x86_64_defconfig
 
 Part A
 	
