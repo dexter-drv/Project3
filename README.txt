@@ -14,6 +14,8 @@ patch -s -p0 < file.patch
 cd linux-4.17
 sudo make x86_64_defconfig
 
+# Replace the run_qemu.sh with the attached script to allocate more memory and cpu to qemu
+
 Part A
 	
 	# Edit the number of pages allocated per minor fault using the Macro PAGES_PER_MINOR_FAULT. This is sent to the kernel using the system call #548.
