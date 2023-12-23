@@ -18,7 +18,6 @@ int main()
 {
     // Number of threads to create which equals the number of processors available
     const int numThreads = sysconf(_SC_NPROCESSORS_ONLN);
-    ;
 
     // Thread ID array
     pthread_t threads[numThreads];
