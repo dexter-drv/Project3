@@ -7,7 +7,7 @@ tar xf linux-4.17.tar.xz
 
 # Apply Patch
 
-patch -s -p0 < patch.diff
+patch -s -p0 < file.patch
 
 Part A
 	
